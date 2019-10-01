@@ -135,6 +135,57 @@ header {
   line-height: 150%
 }
 
+.introphoto {
+  width: 400px;
+  height: 443px;
+}
+
+.image {
+  position: absolute;
+}
+
+.details {
+  position: absolute;
+  width: 360px;
+  height: 403px;
+  background-color: rgba(213, 213, 213, 0.7);
+  margin: 20px;
+  transform: scale(0);
+  transition: 0.8s;
+}
+
+.introphoto:hover .details{
+  transform: scale(1);
+}
+
+.details div {
+  padding-top: 160px;
+  text-align: center;
+}
+
+.details h1 {
+  font-family: Ubuntu, monospace;
+  color: #1E2852;
+  font-size: 40px;
+}
+
+
+.details ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+.details ul li a{
+  text-decoration: none;
+  color: #1E2852;
+  font-size: 20px;
+}
+
+.details ul li a:hover {
+  color: #78596C;
+}
+
 .education {
   background-color: #D5D5D5;
   padding: 50px 160px;
@@ -567,8 +618,31 @@ header {
 }
 
 
-.contactinfo {
+.snsinfo {
   margin-top: 20px;
+  font-family: Poppins, monospace;
+  font-size: 20px;
+  color: #9099A2;
+}
+
+
+.snsinfo ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.snsinfo ul li a{
+  color: #9099A2;
+  text-decoration: none;
+}
+
+.snsinfo ul li a:hover{
+  color: #D5D5D5;
+}
+
+
+.contactinfo {
+  margin: 20px 0px 40px 0px;
   font-family: Poppins, monospace;
   font-size: 20px;
   color: #9099A2;
@@ -579,6 +653,17 @@ header {
   display: inline-block;
   margin-right: 20px;
 }
+
+.contactinfo ul li a{
+  color: #9099A2;
+  text-decoration: none;
+}
+
+.contactinfo ul li a:hover{
+  color: #D5D5D5;
+}
+
+
 
 
 .rightbox{
@@ -607,8 +692,6 @@ header {
 
 }
 
-
-
 .rightbox p {
   margin-top: 15px;
   font-size: 15px;
@@ -626,7 +709,7 @@ header {
 .glowtext {
   width: 100%;
   height: 220px;
-  padding-top: 175px;
+  padding-top: 50px;
 }
 
 .glowtext h2 {
