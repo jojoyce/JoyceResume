@@ -49,6 +49,16 @@ header {
   color: #6D7993;
 }
 
+@media only screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+  .navlink {
+    justify-content: center;
+  }
+
+}
+
 .backimg {
   width: 100%;
   height: 100vh;
@@ -57,18 +67,21 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-repeat: no-repeat;
   animation: animate 10s infinite;
 }
 
 @keyframes animate {
   0%, 100% {
-    background-image: url("Images/2.jpg");
+    background-image: url(Images/2.jpg);
   }
 
   50% {
-    background-image: url("Images/1.jpg");
+    background-image: url(Images/1.jpg);
   }
 }
+
+
 
 .profiletext {
   padding: 25px 30px 25px 30px;
@@ -100,6 +113,23 @@ header {
   color: white;
 }
 
+@media only screen and (max-width: 600px) {
+  .profiletext h1 {
+    font-size: 30px;
+  }
+  .profiletext h3 {
+    font-family: Rajdhani, monospace;
+    font-size: 15px;
+    color: white;
+    margin-top: 15px;
+  }
+  .profiletext h4 {
+    font-family: Rajdhani, sans-serif;
+    font-size: 5px;
+    color: white;
+  }
+}
+
 .selfintro {
   background-color: #D5D5D5;
   padding: 100px 160px;
@@ -111,6 +141,7 @@ header {
 
 .introtext {
   width: 50%;
+  z-index: 2;
 }
 
 .introtext h1 {
@@ -152,6 +183,7 @@ header {
   margin: 20px;
   transform: scale(0);
   transition: 0.8s;
+  z-index:1;
 }
 
 .introphoto:hover .details{
@@ -184,6 +216,18 @@ header {
 
 .details ul li a:hover {
   color: #78596C;
+}
+
+@media only screen and (max-width: 1000px) {
+  .selfintro {
+    padding: 50px 80px;
+  }
+  .introphoto {
+    display: none;
+  }
+  .introtext {
+    width: 100%;
+  }
 }
 
 .education {
@@ -328,6 +372,29 @@ header {
   font-size: 15px;
   font-family: Poppins, monospace;
   color: #6D7993;
+}
+
+@media only screen and (max-width: 1000px) {
+  .education {
+    padding: 50px 80px;
+  }
+  .educontent {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    algin: center;
+    justify-content: space-between;
+  }
+  .MA {
+    width: 100%;
+  }
+  .BA {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .ES {
+    width: 100%;
+  }
 }
 
 .work {
@@ -497,6 +564,70 @@ header {
   color: #D5D5D5;
 }
 
+@media only screen and (max-width: 1000px) {
+  .workcontent {
+    background-image: none;
+    background-color: #6D7993;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .BLBL {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px 80px;
+  }
+  .BLBL h2 {
+    font-size: 15px;
+  }
+  .BLBL img {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .BALI {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px 80px;
+  }
+  .BALI h2 {
+    font-size: 20px;
+  }
+  .BALI img {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .VOG {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px 80px;
+  }
+  .VOG h2 {
+    font-size: 20px;
+  }
+  .VOG img {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+}
+
 .skills {
   background-color: #D5D5D5;
   padding: 50px 160px 150px 160px;
@@ -585,6 +716,21 @@ header {
   width: 5%;
   height: 12px;
   z-index: 3;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .skills {
+    padding: 40px 80px;
+    font-size: 15px;
+  }
+  .skillscontainer {
+    flex-direction: column;
+  }
+  .progressbar {
+    width: 100%;
+  }
+
 }
 
 
@@ -732,4 +878,35 @@ header {
   50% {
     text-shadow: 0px 0px 15px #fff;
   }
+}
+
+@media only screen and (max-width: 1000px) {
+  .glowtext {
+    display: none;
+  }
+  #end-container {
+    height: auto;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divider {
+    display: none;
+  }
+  .rightbox {
+    display: none;
+  }
+  .leftbox {
+    width: 100%;
+    height: auto;
+  }
+  .leftbox h1 {
+    text-align: center;
+  }
+  .leftbox hr {
+    display: none;
+  }
+
 }
