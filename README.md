@@ -1,15 +1,15 @@
 # JoyceResume
 
-#### Website's goal
+### Website's goal
 
-#### First impression
+### First impression
 
-#### Wording is clear and crisp
+### Wording is clear and crisp
 
-#### mobile version maintains clarity of essential elements
+### Mobile version maintains clarity of essential elements
 
-#### Asthetics is authentic and original
+### Asthetics is authentic and original
 
-#### Sideration of various visual design elements 
+### Consideration of various visual design elements 
 
-#### Layout, navigation and information hierarchy
+### Layout, navigation and information hierarchy
